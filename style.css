@@ -1,12 +1,63 @@
 body{
-    background : rgb(51, 51, 51);
-
+    background : rgb(40 40 40);
+    font-family: 'Bebas Neue', cursive;
+    height: 100vh;
 }
 
 h1{
     color : rgb(147, 247, 200)
 }
 
-a {
+a.resume__link {
     color: #fff;
+    text-align: center;
+    font-size: 42px;
+    position: relative;
+    width: fit-content;
+    margin: auto;
+    display: flex;
+    /* display: block; */
+    text-decoration: none;
+    align-content: center;
+    justify-content: center;
+}
+
+
+a.resume__link::before {
+    content: "<a>";
+    position: absolute;
+    font-family: monospace;
+    text-transform: lowercase;
+    color: pink;
+    transform: rotate(
+324deg);
+    font-size: 17px;
+    top: 13px;
+    opacity: 0.25;
+    left: -40px;
+}
+
+a.resume__link::after {
+    content: "</a>";
+    position: absolute;
+    font-family: monospace;
+    text-transform: lowercase;
+    color: pink;
+    transform: rotate( 
+324deg);
+    font-size: 17px;
+    top: 10px;
+    opacity: 0.25;
+    right: -45px;
+}
+a.resume__link:hover{
+    
+text-decoration: rgb(159, 226, 159) wavy underline;
+color: rgb(175, 175, 175);
+}
+
+
+footer{
+    margin-top: 4em;
+    border-top: #fff dashed 2px;
 }
